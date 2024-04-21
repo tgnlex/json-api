@@ -1,0 +1,55 @@
+{
+  "languages": [
+    {
+      "id": 1, 
+      "name":"Javascript", 
+      "paradigms": [
+        "Object-Oriented",
+        "Imperative", 
+        "Procedural", 
+        "Functional", 
+        "Event-Driven"
+      ], 
+      "file-extensions": [
+        ".js", ".cjs", ".mjs", ".jsx"
+      ]
+    },
+    {"id": 2, "name":"Typescript"},
+    {"id": 3, "name":"Python"},
+    {"id": 4, "name":"Rust"},
+    {"id": 5, "name":"Elixir"},
+    {"id": 6, "name": "Erlang"},
+    {"id": 7, "name":"Ruby"},
+    {"id": 8, "name": "Perl"},
+    {"id": 8, "name": "PHP"}, 
+    {"id": 9, "name":"C"},
+    {"id": 10, "name":"C++"}, 
+    {"id": 11, "name": "C#"},
+    {"id": 12, "name": "F#"},
+    {"id": 13, "name": "BASIC"},
+    {"id": 14, "name": "Visual Basic"}, 
+    {"id": 15, "name": "VBScript"},
+    {"id": 16, "name": "VBA"}, 
+    {"id": 17, "name": "Java"},
+    {"id": 18, "name": "Powershell"}, 
+    {"id": 19, "name": "Bash"}, 
+    {"id": 20, "name": "TCL"}, 
+    {"id": 21, "name": "zig"}, 
+    {"id": 22, "name": "R"},
+    {"id": 23, "name": "Smalltalk"},
+    {"id": 24, "name": "Lisp"}, 
+    {"id": 25, "name": "Haskell"}, 
+    {"id": 26, "name": "GO"}, 
+    {"id": 27, "name": "Dart"},
+    {"id": 28, "name": "Kotlin"},
+    {"id": 29, "name": "Algol"},
+    {"id": 30, "name": "Pascal"},
+    {"id": 31, "name": "Cobol"}, 
+    {"id": 32, "name": "Lua"},
+    {"id": 33, "name": "Fortran"}, 
+    {"id": 34, "name": "Julia"}, 
+    {"id": 35, "name": "Ocaml"}, 
+    {"id": 36, "name": "AssemblyScript"},
+    {"id": 37, "name": "CoffeeScript"}                                                                                                                                                     
+  ]
+}  
