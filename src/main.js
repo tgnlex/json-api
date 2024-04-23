@@ -1,4 +1,4 @@
-import {app} from 'api';
+import app from './api.js';
 import {createServer} from 'http';
 const PORT = 4000;
 const server = createServer(app);

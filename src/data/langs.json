@@ -1,5 +1,5 @@
-{
-  "languages": [
+{"data":
+  [
     {
       "id": 1, 
       "name":"Javascript", 
@@ -50,6 +50,6 @@
     {"id": 34, "name": "Julia"}, 
     {"id": 35, "name": "Ocaml"}, 
     {"id": 36, "name": "AssemblyScript"},
-    {"id": 37, "name": "CoffeeScript"}                                                                                                                                                     
-  ]
-}  
+    {"id": 37, "name": "CoffeeScript"}           
+  ]   
+}                                                                                                                                       

@@ -1,5 +1,5 @@
-class BaseError extends Error {
-  message = "";
+export class BaseError extends Error {
+  message = "Default Error Message";
   options = [];
   setOptions = ({opts}) => this.options = [opts];
   setMessage = (message) => this.message = message;
@@ -15,4 +15,11 @@ class BaseError extends Error {
     this.description = description;
   }
 }
+
+export class AuthError extends BaseError() {
+  auth_type = "login" | "registration" | "session";
+  auth_message = `Authentication Error! Type: ${auth_type}`;
+  message = "Default Auth Error Message"
+}
+
 
