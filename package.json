@@ -15,9 +15,11 @@
   "dependencies": {
     "@jest/globals": "^29.7.0",
     "cors": "^2.8.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "supertest": "^6.3.4"
   },
   "devDependencies": {
+    "better-sqlite3": "^9.5.0",
     "jest": "^29.7.0"
   }
 }
