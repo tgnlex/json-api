@@ -9,12 +9,10 @@ const getTime = () => {
   const time = dt.toLocaleTimeString();
   return time;
 }
-
 const timestamp = () => {
   const timestamp = dt.toLocaleString();;
   return timestamp;
 }
-
 const logTimestamp = () => {  
   log('lib', `Timestamp: ${timestamp()}`); 
 } 

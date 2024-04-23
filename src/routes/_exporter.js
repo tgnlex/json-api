@@ -1,4 +1,8 @@
-import authRouter from './authRouter.js';
-import jsonRouter from './jsonRouter.js';
+import authRt from './authRoute.js';
+import jsonRt from './jsonRoute.js';
+import htxRt from './htxRoute.js';
+const authRouter = authRt;
+const jsonRouter = jsonRt;
+const htxRouter = htxRt;
 
-export { authRouter, jsonRouter};
+export { authRouter, jsonRouter, htxRouter};

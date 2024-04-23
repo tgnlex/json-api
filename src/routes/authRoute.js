@@ -1,19 +1,18 @@
 import express from 'express';
-const auth = express.Router()
+const authRt = express.Router()
 
 const login = (req, res, next) => {
   res.send('POST hit endpoint: /auth/login');  
-  log('Login Auth Route')
+  log('auth', 'Login Auth Route')
   next();
 }
 const register = (req, res, next) => {
   res.send('POST hit endpoint: /auth/register')  
-  log('Registration Auth Route')
+  log('auth', 'Registration Auth Route')
   next();
 }
 
-auth.get('/login', login)
-auth.get('/register', register)
+authRt.get('/login', login)
+authRt.get('/register', register)
 
-const authRouter = auth;
-export default authRouter;
+export default authRt;

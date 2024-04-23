@@ -9,7 +9,6 @@ const cookieValidator = async (cookie) => {
     throw cookieError;
   }
 };
-
 const timestampCookie = (res) => {
   res.cookie('Timestamp', `${timestamp}`);
   log('http', 'Set Time Cookie');
