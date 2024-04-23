@@ -5,7 +5,7 @@ const cleanQuery = (raw) => {
   return query;
 }
 
-const jsonSearch = (object, field, query) => {
+const searchByString = (object, field, query) => {
   const array = JSON.parse(object);
   for(let i = 0; i < array.data.length; i++) {
     if (array.data[i][`${field}`]=== query) {
@@ -16,5 +16,12 @@ const jsonSearch = (object, field, query) => {
   console.log({ status: `No ${field} with the value of ${query} was found.`});
   return 'Not Found';
 }; 
-
-export {cleanQuery, jsonSearch};
+const idSearch = (data, id) => {
+  const arr = JSON.parse(data);
+  if (arr.data[id]) {
+    return arr.data[id];
+  } else {
+    return "Not Found"
+  }
+}
+export {idSearch, cleanQuery, searchByString};

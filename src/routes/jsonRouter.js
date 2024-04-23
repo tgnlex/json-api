@@ -1,13 +1,8 @@
 import express from 'express';
 import fs from 'fs';
-import {jsonSearch, cleanQuery} from '../lib/functions/search.js';
+import {jsonSearch, cleanQuery, idSearch} from '../lib/functions/search.js';
 const json = express.Router();
-
 const langs = fs.readFileSync('src/data/langs.json', 'UTF-8');
-
-
-
-
 
 json.get('/langs', (req, res, next) => {
   res.json(langs);
@@ -19,16 +14,9 @@ json.get('/langs/names/:name/', (req, res, next) => {
   res.json(data);
 });
 
-json.get('/langs/ids/:id', (req, res, next) => {
-  const arr = JSON.parse(langs);
-  const query = req.params.id;
-  const id = Number(query);
-  if (arr.data[id]) {
-    res.json(arr.data[id]);
-  } else {
-    res.send("Not found")
-  }
-
+json.get('/langs/ids/:id', (req, res, next) => {  
+  const id = Number(req.params.id);
+  idSearch(langs, id);
 })
 
 const jsonRouter = json;
