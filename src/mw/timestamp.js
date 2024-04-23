@@ -1,5 +1,5 @@
-import {log} from '../lib/functions/base.js';
-import {generateTimestamp} from '../lib/functions/datetime.js';
+import {log} from '../lib/base.js';
+import {generateTimestamp} from '../lib/datetime.js';
 const reqTime = (req, res, next) => {
   const timestamp = generateTimestamp();
   res.cookie('date', `${timestamp}`);

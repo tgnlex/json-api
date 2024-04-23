@@ -1,6 +1,6 @@
 import express from 'express';
 import fs from 'fs';
-import {searchByString, cleanQuery, idSearch} from '../lib/functions/search.js';
+import {searchByString, cleanQuery, idSearch} from '../lib/search.js';
 const api = express.Router();
 const langs = fs.readFileSync('src/data/langs.json', 'UTF-8');
 
