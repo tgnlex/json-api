@@ -1,6 +1,9 @@
 const noop = () => {
   return;
 }
+const nullop = () => {
+  return null;
+}
 const read = (data) => {
   return data;
 } 
@@ -16,7 +19,7 @@ const sleep = (i) => {
 
  const sleepMs = (i) => {
     log('server', `Will sleep for ${i} milliseconds`, )
-    setTimeout(() => log('server', 'sleeping...', i));
+    setTimeout(() => log('server', 'sleeping...'), i);
  }
 const add = (a, b) => {
   let c = a + b;
@@ -32,4 +35,4 @@ const genElement = (type, value) => {
   return element;
 }
 
-export {noop, add, read, log, json, sleep, sleepMs, genElement};
+export {noop, nullop, add, read, log, json, sleep, sleepMs, genElement};
