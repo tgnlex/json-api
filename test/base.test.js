@@ -34,8 +34,8 @@ test('tests log returns properly logged value', () => {
 test('test that add(3 + 4) returns 7', () => {
   expect(add(3, 4)).toBe(7);
 });
-test('test that genElement("p", "test") returns <p>test</p>, etc...', () => {
-  expect(genElement('p', 'test')).toBe('<p>test</p>');
-  expect(genElement('h1', 'test2')).toBe('<h1>test2</h1>');
+test('test that genElementStr("p", "test") returns <p>test</p>, etc...', () => {
+  expect(genElementStr('p', 'test')).toBe('<p>test</p>');
+  expect(genElementStr('h1', 'test2')).toBe('<h1>test2</h1>');
 })
   

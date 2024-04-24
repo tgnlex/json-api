@@ -30,9 +30,9 @@ const json = (object) => {
   log('lib', `Converted ${object} to json string`)
   return data;
 }
-const genElement = (type, value) => {
+const genElementStr = (type, value) => {
   const element = `<${type}>${value}</${type}>`
   return element;
 }
 
-export {noop, nullop, add, read, log, json, sleep, sleepMs, genElement};
+export {noop, nullop, add, read, log, json, sleep, sleepMs, genElementStr};
