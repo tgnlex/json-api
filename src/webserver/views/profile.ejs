@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%= include('partials/head.ejs')
+<body>
+  <main>
+    <% if (user) { %>
+      <h1><%= user.username %>`s Profile </h1>
+        <%- include('./partials/user_profile.ejs')
+      <% } %> 
+  </main>
+</body>
+</html>

@@ -1,0 +1,223 @@
+{"data":
+  [
+    {
+      "id": 1, 
+      "name":"Javascript",       
+      "year-invented": "",
+      "paradigms": [
+        "Object-Oriented",
+        "Imperative", 
+        "Procedural", 
+        "Functional", 
+        "Event-Driven"
+      ], 
+
+      "file-extensions": [
+        ".js", ".cjs", ".mjs", ".jsx"
+      ]
+    },
+    {
+      "id": 2, 
+      "name":"Typescript", 
+      "year-invented": "", 
+      "translation":"compiled", 
+      "type-system":[], 
+      "paradigms": [], 
+      "file-extensions":[".ts", ".tsx", ".cts", ".mts"]},
+    {
+      "id": 3, 
+      "name":"Python", 
+      "year-invented": "", 
+      "translation": "Interpreted", 
+      "type-system": [], 
+      "paradigms": ["Object Oriented"], 
+      "file-extensions":[]
+    },
+    {
+      "id": 4, 
+      "name":"Rust", 
+      "year-invented": "", 
+      "translation": "Compiled", 
+      "type-system": [], 
+      "paradigms": [], 
+      "file-extensions":[".rs"]
+    },
+    {
+      "id": 5, 
+      "name":"Elixir", 
+      "year-invented": "", 
+      "translation": "", 
+      "type-system": [], 
+      "paradigms": ["concurrent"], 
+      "file-extensions":[".ex", ".exs"]
+    },
+    {
+      "id": 6, 
+      "name": "Erlang", 
+      "year-invented": "", 
+      "translation": "", 
+      "type-system": [], 
+      "paradigms": [], 
+      "file-extensions":[]
+    },
+    {
+      "id": 7, 
+      "name":"Ruby", 
+      "year-invented": "", 
+      "translation": "Interpreted", 
+      "type-system": [], 
+      "paradigms": ["Object Oriented"], 
+      "file-extensions":[".rb", ".erb"]
+    },
+    {
+      "id": 8, "name": "Perl", 
+      "year-invented": "", 
+      "translation": "", 
+      "type-system": [], 
+      "paradigms": [], 
+      "file-extensions":[]
+    },
+    {
+      "id": 8, "name": "PHP", 
+      "year-invented": "", "translation": "", 
+      "type-system": [],
+      "paradigms": [], 
+      "file-extensions":[".php"]}, 
+    {
+      "id": 9, "name":"C", 
+      "year-invented": "", 
+      "translation": "", 
+      "type-system": [], 
+      "paradigms": [], 
+      "file-extensions":[".c", ".h"]
+    },
+    {
+      "id": 10, "name":"C++", 
+      "year-invented": "", 
+      "translation": "Compiled", 
+      "type-system": [], 
+      "paradigms": ["Object Oriented"], 
+      "file-extensions":[".cpp", ".h"] 
+    }, 
+    {
+      "id": 11, 
+      "name": "C#", 
+      "year-invented": "", 
+      "translation": "", 
+      "type-system": [], 
+      "paradigms": [], 
+      "file-extensions":[]
+    },
+    {
+      "id": 12, 
+      "name": "F#", 
+      "year-invented": "", 
+      "translation": "", 
+      "type-system": [], 
+      "paradigms": ["Functional"], 
+      "file-extensions":[]
+    },
+    {
+      "id": 13, 
+      "name": "BASIC", 
+      "year-invented": "", 
+      "translation": "", 
+      "type-system": [], 
+      "paradigms": [], 
+      "file-extensions":[]
+    },
+    {
+      "id": 14, "name": "Visual Basic", 
+      "year-invented": "", 
+      "translation": "", 
+      "type-system": [], 
+      "paradigms": [], 
+      "file-extensions":[] }, 
+    {
+      "id": 15, "name": "VBScript", "year-invented": 
+      "", "translation": "", "type-system": [], "paradigms": [], 
+      "file-extensions":[]
+    },
+    {
+      "id": 16, "name": "VBA", 
+      "year-invented": 
+      "", "translation": "", "type-system": [], 
+      "paradigms": [], 
+      "file-extensions":[]}, 
+    {
+      "id": 17, "name": "Java", 
+      "year-invented": "", 
+      "translation": "", "type-system": [], 
+      "paradigms": [], 
+      "file-extensions":[]},
+    {
+      "id": 18, "name": "Powershell", "year-invented": "", 
+      "translation": "", "type-system": [], 
+      "paradigms": [], "file-extensions":[]}, 
+    {
+      "id": 19, "name": "Bash", "year-invented": "", 
+      "translation": "", "type-system": [], 
+      "paradigms": [], "file-extensions":[]}, 
+    {
+      "id": 20, "name": "TCL", "year-invented": "", 
+      "translation": "", "type-system": [], "paradigms": [], "file-extensions":[]}, 
+    {
+      "id": 21, "name": "zig", "year-invented": "", "translation": "", 
+      "type-system": [], "paradigms": [], "file-extensions":[]}, 
+    {
+      "id": 22, "name": "R", "year-invented": "", "translation": "", 
+      "type-system": [], 
+      "paradigms": [], "file-extensions":[]},
+    {
+      "id": 23, "name": "Smalltalk", 
+      "year-invented": "", 
+      "translation": "", 
+      "type-system": [], "paradigms": [], 
+      "file-extensions":[]},
+    {
+      "id": 24, "name": "Lisp", 
+    "year-invented": "", "translation": "", 
+    "type-system": [], 
+    "paradigms": [], "file-extensions":[]}, 
+    {
+      "id": 25, "name": "Haskell", "year-invented": "", "translation": "", 
+    "type-system": [], "paradigms": ["Functional"], "file-extensions":[".hs", ".lhs"]}, 
+    {
+      "id": 26, "name": "GO", "year-invented": "", "translation": "", 
+    "type-system": [], "paradigms": [], "file-extensions":[]}, 
+    {
+      "id": 27, "name": "Dart", "year-invented": "", "translation": "", "type-system": [], "paradigms": [], "file-extensions":[]},
+    {
+      "id": 28, "name": "Kotlin", "year-invented": "", "translation": "", 
+    "type-system": [], "paradigms": [], "file-extensions":[]},
+    {
+      "id": 29, "name": "Algol", "year-invented": "", "translation": "", "type-system": [], "paradigms": [], "file-extensions":[]},
+    {
+      "id": 30, "name": "Pascal","year-invented": "", 
+    "translation": "", "type-system": [], "paradigms": [], "file-extensions":[] },
+    {
+      "id": 31, "name": "Cobol", "year-invented": "", "translation": "", "type-system": [], "paradigms": [], "file-extensions":[]}, 
+    {
+      "id": 32, "name": "Lua", "year-invented": "", 
+    "translation": "", "type-system": [], "paradigms": [], "file-extensions":[]},
+    {
+      "id": 33, "name": "Fortran", "year-invented": "", "translation": "", "type-system": [], "paradigms": [], "file-extensions":[]}, 
+    {
+      "id": 34, "name": "Julia", "year-invented": "", "translation": "", "type-system": [], "paradigms": [], "file-extensions":[]}, 
+    {
+      "id": 35, "name": "Ocaml", "year-invented": "", "translation": "", "type-system": [], "paradigms": [], "file-extensions":[]}, 
+    {
+      "id": 36, "name": "AssemblyScript", 
+    "year-invented": "", "translation": "", "type-system": [], "paradigms": [], "file-extensions":[]},
+    {
+      "id": 37, "name": "CoffeeScript", "year-invented": "", "translation": "", "type-system": [], "paradigms": [], "file-extensions": []},           
+    {
+      "id": 38, "name": "Scala", "year-invented": "",  "translation": "", "type-system": [], "paradigms": [], "file-extensions": []},
+    {
+      "id": 39, "name": "hydroscript", 
+     "year-invented": 2024, "translation": "", "type-system": [], 
+    "paradigms": [], "file-extensions": []},
+    {"id": 40, "name": "purescript", 
+    "year-invented": "", "translation": "compiled", "type-system": [], "paradigms": [], "file-extensions": ""}   
+    ]
+  }                                                                                                                                       

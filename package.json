@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node src/main.js",
-    "date": "node scripts/date.js",
+    "start:api": "node scripts/apiStart.js",
+    "start:jrpc": "node scripts/jrpcStart.js",
+    "date": "node scripts/basic/date.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "keywords": [],
@@ -15,8 +17,13 @@
   "dependencies": {
     "@jest/globals": "^29.7.0",
     "cors": "^2.8.5",
+    "crawlee": "^3.9.2",
     "express": "^4.19.2",
-    "supertest": "^6.3.4"
+    "express-session": "^1.18.0",
+    "jayson": "^4.1.0",
+    "passport": "^0.7.0",
+    "puppeteer": "^22.7.1",
+    "supertest": "^7.0.0"
   },
   "devDependencies": {
     "better-sqlite3": "^9.5.0",

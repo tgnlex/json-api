@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "web",
+    "server": "http", 
+    "PORT": 80
+  },
+  {
+    "id": 2, 
+    "name": "Services",
+    "server": "API",
+    "api-type": "RPC",
+    "rpc-type": "json-rpc",  
+    "PORT": 2000},
+  {
+    "id": 3, 
+    "name": "Auth", 
+    "server": "authentication", 
+    "PORT": 2500},
+  {
+    "id": 4,
+    "name": "Data",
+    "server": "API",  
+    "api-type": "Rest",
+    "rest-type": "JSON",
+    "PORT": 4000
+  },
+  {
+    "id": 5,
+    "name": "Hypertext",
+    "server": "API", 
+    "api-type": "Rest", 
+    "Type": "HTML+XML",
+    "PORT": 4500
+  }, {"Possible Future Servers In this Cluster": [
+    "database", 
+    "websocket", 
+    "sse", 
+    "redis", 
+    "smtp(email)",
+    "fileserver", 
+    "graphql api", 
+    "syslog server"
+  ]
+  }
+]
