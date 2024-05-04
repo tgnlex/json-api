@@ -3,41 +3,48 @@ import htxApi from './htxApi/server.js';
 import jsonApi from './jsonApi/server.js';
 import app from './webserver/server.js';
 import {createServer} from 'http';
-
-const httpServer = createServer(services);
+const WEB_PORT = 3000;
+const JSON_PORT = 3100;
+const HTX_PORT = 3200;
+const WS_PORT = 4000;
+const DB_PORT = 5000;
+const webServer = createServer(app);
 const jsonServer = createServer(jsonApi);
 const htxServer = createServer(htxApi);
 
-
-const startJSON = () => {
-  const PORT = 4000;
-  jsonServer.listen(PORT, () => {
-  log("json api", `Listening on http://localhost:${PORT}`);
-});
-};
-
-const startHtx = () => {
-  const PORT = 4100;
-  htServer.listen(PORT, () => {
-    log("ht api", `Listening on http://localhost:${PORT}`);
-  })
-}
-
-const startHttp = () => {
-  const PORT = 4200;
-  rpcServer.listen(PORT, () => {
-    log("jrpc", `Listenin on http://localhost:${PORT}`)
+const startWEB = () => {
+  const PORT = WEB_PORT;
+  webServer.listen(PORT, () => {
+    log("http", `Listenin on http://localhost:${PORT}`)
   })
 } 
 
+const startJSON = () => {
+  const PORT = 4100;
+  jsonServer.listen(PORT, () => {
+  log("json", `Listening on http://localhost:${PORT}`);
+});
+}
 
+const startHtx = () => {
+  const PORT = 4200;
+  htxServer.listen(PORT, () => {
+    log("htx", `Listening on http://localhost:${PORT}`);
+  })
+}
+
+
+/* const startWS = () => {
+  const PORT = 5000;
+}
+*/
 
 
 const main = () => {
-  startHT();
+  startWEB();
+  //startWS();
   startJSON();
-  startRPC();
-
+  startHTX();
 }
-export {main, startHT, startJSON, startRPC}
+export {main, startHTX, startJSON, startWEB}
 main();

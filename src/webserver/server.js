@@ -1,5 +1,5 @@
 import express from 'express';
-import {viewHandler} from '../_lib/handlers/viewHandler.js';
+import {viewHandler} from '../handlers/viewHandler.js';
 import session from 'express-session';
 import passport from 'passport';
 const PORT = 3000;

@@ -1,4 +1,4 @@
-import reqLogger from '../_mw/reqLogger'
+import reqLogger from '../_mw/logger'
 const viewHandler = (req, res, next, view, opts) => {
   reqLogger(req);
   if (view) {
