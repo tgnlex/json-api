@@ -1,33 +1,33 @@
-import {log} from './_lib/base.js';
+import {log} from './_shared/_lib/base.js';
 import htxApi from './htxApi/server.js';
 import jsonApi from './jsonApi/server.js';
 import app from './webserver/server.js';
 import {createServer} from 'http';
-const WEB_PORT = 3000;
-const JSON_PORT = 3100;
-const HTX_PORT = 3200;
+const HTTP_PORT = 3000;
+const JSON_API_PORT = 3100;
+const HTX_API_PORT = 3200;
 const WS_PORT = 4000;
 const DB_PORT = 5000;
-const webServer = createServer(app);
+const httpServer = createServer(app);
 const jsonServer = createServer(jsonApi);
 const htxServer = createServer(htxApi);
-
-const startWEB = () => {
-  const PORT = WEB_PORT;
-  webServer.listen(PORT, () => {
+//const wsServer = createServer(socket);
+const startHTTP = () => {
+  const PORT = HTTP_PORT;
+  httpServer.listen(PORT, () => {
     log("http", `Listenin on http://localhost:${PORT}`)
   })
 } 
 
 const startJSON = () => {
-  const PORT = 4100;
+  const PORT = JSON_API_PORT;
   jsonServer.listen(PORT, () => {
   log("json", `Listening on http://localhost:${PORT}`);
 });
 }
 
 const startHTX = () => {
-  const PORT = 4200;
+  const PORT = HTX_API_PORT;
   htxServer.listen(PORT, () => {
     log("htx", `Listening on http://localhost:${PORT}`);
   })
@@ -41,7 +41,7 @@ const startHTX = () => {
 
 
 const main = () => {
-  startWEB();
+  startHTTP();
   //startWS();
   startJSON();
   startHTX();
@@ -49,4 +49,4 @@ const main = () => {
 main();
 
 const startALL = main;
-export {main, startHTX, startJSON, startWEB, startALL}
+export {startHTX, startJSON, startHTTP, startALL}

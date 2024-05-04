@@ -1,4 +1,4 @@
-import {BaseError, AuthError} from '../classes/ErrorClasses.js';
+import {BaseError, AuthError} from '../classes/Errors.js';
 
 const cookieError = new BaseError({
   message: "Error while trying to validate cookie",

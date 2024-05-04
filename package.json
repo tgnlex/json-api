@@ -6,9 +6,12 @@
   "type": "module",
   "scripts": {
     "start": "node src/main.js",
-    "start:api": "node scripts/apiStart.js",
-    "start:jrpc": "node scripts/jrpcStart.js",
-    "date": "node scripts/basic/date.js",
+    "start:http": "node scripts/startHttp.js",
+    "start:json": "node scripts/startJson.js",
+    "start:htx": "node scripts/startHtx.js",
+    "start:ws": "echo 'Not yet implemented'",    
+    "start:all": "node scripts/startAll.js",
+    "print:date": "node scripts/basic/date.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "keywords": [],
