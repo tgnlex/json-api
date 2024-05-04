@@ -8,9 +8,15 @@ const read = (data) => {
   return data;
 } 
 const log = (name, data) => {
+  if (name === undefined) {
+    let src = `SERVER`
+  } else {
   const src = name.toUpperCase();
+  }
   console.log(`[${src}] ${data}`)
 }
+
+
 const sleep = (i) => {
     const duration = i * 1000;
     log('server', `Will sleep for ${i} second(s)`)

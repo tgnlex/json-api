@@ -1,4 +1,4 @@
-import {timestamp} from './functions/datetime.js';
+import {timestamp} from '../functions/datetime.js';
 
 const serverStatus = {
   uptime: process.uptime(),

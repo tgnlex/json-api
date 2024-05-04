@@ -3,21 +3,22 @@ const dt = new Date();
 
 const getDate = () => {
   const date = dt.toLocaleDateString();
+  log(date)
   return date;
 }
 const getTime = () => {
   const time = dt.toLocaleTimeString();
+  log(time)
   return time;
 }
 const timestamp = () => {
-  const timestamp = dt.toLocaleString();;
+  const timestamp = dt.toLocaleString();
+  log(timestamp)
   return timestamp;
 }
-const logTimestamp = () => {  
-  log('lib', `Timestamp: ${timestamp()}`); 
-} 
 
-export {dt, getDate, getTime, timestamp, logTimestamp}
+
+export {dt, getDate, getTime, timestamp}
 
 
 

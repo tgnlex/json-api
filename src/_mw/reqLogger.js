@@ -1,4 +1,4 @@
-import reqTime from './timestamp.js';
+import reqTime from './reqTimestamp.js';
 import {log} from './functions/base.js';
 const reqLogger = (req, res, next) => {
   reqTime();

@@ -1,4 +1,5 @@
 import express from 'express';
+import {viewHandler} from '../_lib/handlers/viewHandler.js';
 import session from 'express-session';
 import passport from 'passport';
 const PORT = 3000;
@@ -10,16 +11,15 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}));
 app.use(express.static('./static/'));
 
-app.get('/', (req, res, next) => {
-  res.render('index.ejs', {title: "Landing"});
+app.get('/', viewHandler('index.ejs', {title: "Index"}));
+
+app.get('/login', viewHandler('login.ejs', {title: "Login"}));
+
+app.get('/register', viewHandler('register.ejs', {title: "Register"}))
+
+app.get('/profile', viewHandler('profile.ejs'))
+app.get('/profile/avatar/', (req, res, next) => {
+  res.render('upload_avatar.ejs')
 })
 
-app.get('/login', (req, res, next) => {
-  res.render('login.ejs', {title: "Login"});
-})
-app.get('/register', (req, res, next) => {
-  res.render('register.ejs', {title: "Register"})
-})
-app.get('/profile', (req, res, next) => {
-  res.render('profile.ejs')
-})
+export {app};

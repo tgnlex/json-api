@@ -1,5 +1,5 @@
 import {timestamp, date, time} from 'datetime.js';
-import {cookieError} from './errors.js';
+import {cookieError} from '../objects/errors.js';
 import {log} from './base.js';
 
 const cookieValidator = async (cookie) => {
@@ -11,16 +11,11 @@ const cookieValidator = async (cookie) => {
 };
 const timestampCookie = (res) => {
   res.cookie('Timestamp', `${timestamp}`);
-  log('http', 'Set Time Cookie');
+  log('http', 'Set Timestamp Cookie');
 }
 const dateCookie = (res) => {
   res.cookie('Date', `${date}`);
   log('http', 'Set Date Cookie')
-}
-
-const timeCookie = (res) => {
-  res.cookie('Time', `${time}`)
-  log('http', `Set timestamp Cookie.`)
 }
 
 

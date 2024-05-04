@@ -1,6 +1,6 @@
 const router = express.Router();
 import {clients} from '../server.js';
-import {serverStatus} from '../../_lib/status.js'
+import {serverStatus} from '../../_lib/objects/status.js'
 
 
 

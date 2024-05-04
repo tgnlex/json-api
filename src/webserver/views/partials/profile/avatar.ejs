@@ -1,0 +1,12 @@
+<% if (user.avatar) { %>
+  <%= user.avatar %>
+<% } else { %>
+<div>
+  <p id="avatar--placeholder" class="avatar--text"
+    >No avatar was found<br>
+     to be associated with<br>
+     this account. 
+  </p>
+  <a href="/profile/avatar/upload">Upload a new avatar!</a>
+</div>
+<% %>

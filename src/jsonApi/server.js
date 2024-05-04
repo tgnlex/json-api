@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import {langsRouter} from './routes/langs.js';
-import {reqLogger} from '../middleware/reqLogger.js';
+import {reqLogger} from '../_mw/reqLogger.js';
 const api = express();
 const clients = [];
 //middleware
