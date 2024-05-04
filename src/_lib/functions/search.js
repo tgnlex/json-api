@@ -1,5 +1,4 @@
-import {log, json} from './functions/base';
-                                                                                                                                                               } from './base.js';
+import {log, json} from './functions/base'; 
 
 const stringSearch = (data, field, query) => {
   const array = json(data);

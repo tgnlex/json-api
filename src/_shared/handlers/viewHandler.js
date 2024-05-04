@@ -1,6 +1,6 @@
-import errorHandler from './errHandler.js'
+import errorHandler from './errorHandler.js'
 import reqLogger from '../middleware/logger.js'
-const viewHandler = (req, res, next, view, opts) => {
+const viewHandler = (req, res, view, opts) => {
   reqLogger(req);
   if (view) {
     if (opts) {

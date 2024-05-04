@@ -4,7 +4,7 @@ class User {
   website = undefined;
   constructor() {
     super()
-    
+
     email = this.email;
     username = this.username;
     password = this.password;
@@ -14,4 +14,6 @@ setBio(text) {this.bio = text}
 setWebsite(url) {this.website = url}
 changePassword(pass) {this.password = pass}
 }
+
+export default User;
 
