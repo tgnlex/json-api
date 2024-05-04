@@ -1,14 +1,12 @@
-import {log} from './_shared/_lib/base.js';
+import {createServer} from 'http';
 import htxApi from './htxApi/server.js';
 import jsonApi from './jsonApi/server.js';
-import app from './webserver/server.js';
-import {createServer} from 'http';
-const HTTP_PORT = 3000;
-const JSON_API_PORT = 3100;
-const HTX_API_PORT = 3200;
-const WS_PORT = 4000;
-const DB_PORT = 5000;
-const httpServer = createServer(app);
+import webApp from './webserver/server.js';
+import database from './dbServer/server.js';
+import {log} from './_shared/_lib/base.js';
+import {HTTP_PORT, JSON_API_PORT, HTX_API_PORT, DB_PORT, WS_PORT, } from './ports.js'
+const httpServer = createServer(webApp);
+const dbServer = createServer(database);
 const jsonServer = createServer(jsonApi);
 const htxServer = createServer(htxApi);
 //const wsServer = createServer(socket);
@@ -18,6 +16,13 @@ const startHTTP = () => {
     log("http", `Listenin on http://localhost:${PORT}`)
   })
 } 
+
+const startSQL = () => {
+  const PORT = DB_PORT; 
+  dbServer.listen(PORT, () => {
+    log('sql', `Listening on http://localhost:${PORT}`)
+  })
+}
 
 const startJSON = () => {
   const PORT = JSON_API_PORT;
@@ -42,6 +47,7 @@ const startHTX = () => {
 
 const main = () => {
   startHTTP();
+  startSQL();
   //startWS();
   startJSON();
   startHTX();
@@ -49,4 +55,4 @@ const main = () => {
 main();
 
 const startALL = main;
-export {startHTX, startJSON, startHTTP, startALL}
+export {startHTX, startJSON, startSQL, startHTTP, startALL}

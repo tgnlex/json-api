@@ -1,0 +1,7 @@
+const HTTP_PORT = 3000;
+const JSON_API_PORT = 3100;
+const HTX_API_PORT = 3200;
+const WS_PORT = 4000;
+const DB_PORT = 5000;
+
+export {HTTP_PORT, JSON_API_PORT, HTX_API_PORT, WS_PORT, DB_PORT}
