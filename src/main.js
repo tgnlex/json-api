@@ -26,7 +26,7 @@ const startJSON = () => {
 });
 }
 
-const startHtx = () => {
+const startHTX = () => {
   const PORT = 4200;
   htxServer.listen(PORT, () => {
     log("htx", `Listening on http://localhost:${PORT}`);
@@ -46,5 +46,7 @@ const main = () => {
   startJSON();
   startHTX();
 }
-export {main, startHTX, startJSON, startWEB}
 main();
+
+const startALL = main;
+export {main, startHTX, startJSON, startWEB, startALL}
