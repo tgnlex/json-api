@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "type": "module",
-  "scripts": {
+  "scripts": {   
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "start": "node src/main.js",
     "start:http": "node scripts/startHttp.js",
     "start:json": "node scripts/startJson.js",
@@ -12,8 +13,7 @@
     "start:db": "node scripts/startDB.js",
     "start:ws": "echo 'Not yet implemented'",    
     "start:all": "node scripts/startAll.js",
-    "print:date": "node scripts/basic/date.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "date": "node scripts/basic/date.js"
   },
   "keywords": [],
   "author": "",

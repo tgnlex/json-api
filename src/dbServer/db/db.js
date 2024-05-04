@@ -1,7 +1,9 @@
 import sqlite3 from 'sqlite3';
 const db = new sqlite3.Database('./dev.db');
-const query = async (sql) => {
+const dbQuery = async (sql) => {
+  db.connect();
   const results = await db.query(`${sql}`);
+  db.close;
   return results;
 }
 
@@ -13,4 +15,4 @@ const sql = ``
 // query(sql);
 db.close();
 
-export {db, query}
+export {db, dbQuery}
