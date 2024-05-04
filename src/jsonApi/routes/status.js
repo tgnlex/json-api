@@ -4,7 +4,7 @@ import {serverStatus} from '../../_lib/objects/status.js'
 
 
 
-router.get('/health', (req, res, next) =>{
+router.get('/status/health', (req, res, next) =>{
   try {
     res.send(serverStatus);
   } catch (error) {
@@ -13,11 +13,11 @@ router.get('/health', (req, res, next) =>{
   }
 });
 
-router.get('/clients', (req, res, next) => {
+router.get('/status/clients', (req, res, next) => {
   res.json({clients: clients.length});
 });
 
-router.get('/teapot', (req, res, next) => {
+router.get('/status/teapot', (req, res, next) => {
   res.status(418).send();
 })
 

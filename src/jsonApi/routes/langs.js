@@ -7,16 +7,11 @@ const langs = fs.readFileSync('/data/langs.json', 'UTF-8');
 
 
 
-router.get('/', (req, res, next) => {
+router.get('/langs', (req, res, next) => {
   res.json(langs);
 });
 
-router.get('/names/:name/', searchHandler(req, res, 'str', langs, 'name', req.params.name)));
+router.get('/langs/name/:name', req, res, searchHandler('str', langs, 'name', req.params.name, res));
   
 
-router.get('/ids/:id', (req, res, next) => {  
-  const id = Number(req.params.id);
-  idSearch(langs, id);
-})
-const langRouter = router;
-export default langRouter;
+router.get('/langs/id/:id', req, res, searchHandler('id', langs, req.params.id, res))

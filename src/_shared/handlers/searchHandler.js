@@ -1,5 +1,5 @@
-import {stringSearch, idSearch} from '../../_lib/functions/search.js';
-import {cleanStr} from '../../_lib/functions/string.js';
+import {stringSearch, idSearch} from '../functions/search.js';
+import {cleanStr} from '../functions/string.js';
 const searchHandler = (searchType, data, field, query, res) =>{
   if (searchType == "str"
   ) {
