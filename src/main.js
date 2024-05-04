@@ -7,6 +7,7 @@ import {log} from './_shared/_lib/base.js';
 import {HTTP_PORT, JSON_API_PORT, HTX_API_PORT, DB_PORT, WS_PORT, } from './ports.js'
 const httpServer = createServer(webApp);
 const dbServer = createServer(database);
+const authServer = createServer()
 const jsonServer = createServer(jsonApi);
 const htxServer = createServer(htxApi);
 //const wsServer = createServer(socket);

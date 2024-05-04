@@ -9,7 +9,7 @@ const authQuery = async (sql) => {
 
 authdb.connect();
 // Write Scripts Here
-const sql = ``
+const sql = ``;
 
 // Uncomment this when executing a query. 
 // authQuery(sql);
