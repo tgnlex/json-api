@@ -1,5 +1,5 @@
 {
-  "name": "json-api",
+  "name": "diy-node-cluster",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -10,7 +10,7 @@
     "start:json": "node scripts/startJson.js",
     "start:htx": "node scripts/startHtx.js",
     "start:db": "node scripts/startDB.js",
-    "start:ws": "echo 'Not yet implemented'",
+    "start:ws": "echo 'Not yet implemented'",    
     "start:all": "node scripts/startAll.js",
     "print:date": "node scripts/basic/date.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
@@ -27,7 +27,6 @@
     "jayson": "^4.1.0",
     "passport": "^0.7.0",
     "puppeteer": "^22.7.1",
-    "sqlite3": "^5.1.7",
     "supertest": "^7.0.0"
   },
   "devDependencies": {
