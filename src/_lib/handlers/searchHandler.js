@@ -1,13 +1,15 @@
-const searchHandler = (req, res, next, searchType, data, field, query) =>{
+import {stringSearch, idSearch} from '../functions/search.js';
+import {cleanStr} from '../_lib/functions/string.js';
+const searchHandler = (searchType, data, field, query) =>{
   if (searchType == "str"
   ) {
     const cleanQuery = cleanStr(query);
     const result = stringSearch(data, field, cleanQuery);
-    res.send(result);
+    return result;
   } else if (searchType ==  "id") {
-    
-    const result = idSearch(data, query)
-    
+    const cleanQuery = Number(query)
+    const result = idSearch(data, cleanQuery)
+    return result;   
   }
 }
 

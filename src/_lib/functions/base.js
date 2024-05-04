@@ -10,10 +10,12 @@ const read = (data) => {
 const log = (name, data) => {
   if (name === undefined) {
     let src = `SERVER`
+    console.log(`[${src}] ${data}`)
   } else {
   const src = name.toUpperCase();
-  }
   console.log(`[${src}] ${data}`)
+
+  }
 }
 
 
@@ -36,11 +38,11 @@ const json = (object) => {
   log('lib', `Converted ${object} to json string`)
   return data;
 }
-const genElementStr = (type, value) => {
+const createElem = (type, value) => {
   const element = `<${type}>${value}</${type}>`
   return element;
 }
 
 
 
-export {noop, nullop, add, read, log, json, sleep, sleepMs, genElementStr, serverStatus};
+export {noop, nullop, add, read, log, json, sleep, sleepMs, createElem};

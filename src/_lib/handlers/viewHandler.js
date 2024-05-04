@@ -1,10 +1,14 @@
 import reqLogger from '../_mw/reqLogger'
-const viewHandler = (req, res, next, , opts) => {
+const viewHandler = (req, res, next, view, opts) => {
   reqLogger(req);
+  if (view) {
   if (opts) {
-    res.render(path, opts)
+    res.render(view, opts)
   } else {
-    res.render(path)
+    res.render(view)
+  }
+  } else  {
+    console.error("[HTTP]: No view was passed to view handler.")
   }
 }
 export { viewHandler }
