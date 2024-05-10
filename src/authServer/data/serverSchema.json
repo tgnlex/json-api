@@ -1,0 +1,101 @@
+{
+  "Server":{
+    "name":"AuthServer", 
+    "hostname": "localhost",
+    "port": 7000,
+    "description": "Server for handling user registration and authentication.",
+    "structures": ["API", "DATABASE"],
+    "schema": {
+      "API": {
+        "type": "REST",
+        "routes": [
+          {
+            "id": 1, 
+            "name": "False root", 
+            "url": "localhost:7000/", 
+            "description": "Redirects to route: '/auth' ",
+            "request": {
+              "method": "GET",
+              "data": false
+            },
+            "response": {
+              "type": "redirect",
+              "status": false
+            }
+          },
+          {
+            "id": 2,
+            "name": "Root (Active)",
+            "url": "localhost:7000/auth/  [You are here]",
+            "description": "Returns this json document",
+            "request": {
+              "method": "GET",
+              "data": "none"
+            },
+            "response":{
+              "type": "json",
+              "status": false
+            }
+          },
+          {
+            "id": 3,
+            "name": "Register",
+            "url": "localhost:7000/auth/register",              
+            "description": "Attempts to create a new user account using credentials provided via registration form",
+            "request": {
+              "method": "POST",
+              "data":{
+                "required": true,
+                "type": "multipart/formdata"
+              }
+            },
+            "response":{
+              "type": ["redirect"],
+              "status": true
+            }
+          },
+          {
+            "id": 4,
+            "name": "Login",
+            "url": "localhost:7000/auth/login",
+            "description": "Attempts to authenticate user and create a session, allowing them access to restricted site",
+            "request": {
+              "method": "POST",
+              "data": {
+                "required": "true",
+                "type":"multipart/formdata" 
+              }
+            },
+            "response": {
+              "type": "message",
+              "status": true
+            }
+          },
+          {
+            "id": 5,
+            "name": "Admin",
+            "url": "localhost:7000/auth/admin",
+            "description": "Attempts to authenticate an account with admin privelages, and create an administrative session, allowing them access admin only areas and features",
+            "request": {
+              "method": "POST",
+              "data": {
+                "required": "true",
+                "type":"multipart/formdata" 
+              }
+            },
+            "response": {
+              "type": "message",
+              "status": true
+            }
+          }
+        ] 
+      },   
+      "DATABASE": {
+        "Name": "Auth.db",
+        "Software": "SQLite3",
+        "location": "authServer/db/auth.db", 
+        "Tables": ["Users", "Admins", "Sessions"]
+      }
+    }
+  }
+}
